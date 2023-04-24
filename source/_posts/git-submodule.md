@@ -45,22 +45,28 @@ git submodule add git@github.com:harry-gcb/hexo-theme-yilia.git themes/yilia
 
 删除子模块比较复杂，因为子模块的维护地址可能发生变化，或者需要替换子模块，这时就需要删除原有的子模块
 
-1. 删除子模块文件夹
+1. 删除子模块缓存
+
+   ```
+   git rm --cached themes/yilia
+   ```
+
+2. 删除子模块文件夹
 
    ```
    rm -rf themes/yilia
    ```
 
-2. 删除`.gitmodules`中关于子模块的信息
+3. 删除`.gitmodules`中关于子模块的信息
 
-   ```shell
+   ```
    vim .gitmodules
    #[submodule "themes/yilia"]
    #	path = themes/yilia
    #	url = git@github.com:harry-gcb/hexo-theme-yilia.git
    ```
 
-3. 删除`.git/config`中关于子模块的信息
+4. 删除`.git/config`中关于子模块的信息
 
    ```
    vim .git/config
@@ -69,16 +75,10 @@ git submodule add git@github.com:harry-gcb/hexo-theme-yilia.git themes/yilia
    #	active = true
    ```
 
-4. 删除`.git/modules`中子模块对应的目录
+5. 删除`.git/modules`中子模块对应的目录
 
    ```
    rm -rf .git/modules/themes/yilia
-   ```
-
-5. 删除子模块缓存
-
-   ```
-   git rm --cached themes/yilia
    ```
 
 ## clone包含子模块的项目
