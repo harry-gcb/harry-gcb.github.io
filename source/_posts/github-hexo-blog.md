@@ -1,7 +1,7 @@
 ---
 title: Github+Hexo搭建个人博客
 date: 2023-04-22 14:07:03
-tags:
+tags: hexo
 ---
 
 本文内容主要记录Hexo+Github搭建个人博客的过程，以及后续维护时如何添加新的feature
@@ -59,3 +59,6 @@ deploy:
 * `hexo s`打开本地网页预览效果
 * `hexo d`部署到github，打开`github_username.github.io`即可浏览文章
 
+## 主题安装
+
+hexo的主题安装及其简单，选择一款喜欢的主题下载到`themes`目录下，然后将根目录`_config.yml`中的`theme`设置为自己的主题即可。我选择使用`yilia`这款主题，主要是出于简洁和性能的考量，但是原作者好像已经不再维护了，有些功能需要自己摸索。
