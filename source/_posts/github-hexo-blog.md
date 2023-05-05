@@ -1,7 +1,7 @@
 ---
 title: Github+Hexo搭建个人博客
 date: 2023-04-22 14:07:03
-tags: hexo
+tags: [hexo]
 ---
 
 本文内容主要记录Hexo+Github搭建个人博客的过程，以及后续维护时如何添加新的feature
@@ -47,7 +47,7 @@ npm install hexo-deployer-git
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:harry-gcb/harry-gao.github.io.git
+  repository: git@github.com:harry-gcb/harry-gcb.github.io.git
   branch: main
 ```
 
@@ -61,4 +61,7 @@ deploy:
 
 ## 主题安装
 
-hexo的主题安装及其简单，选择一款喜欢的主题下载到`themes`目录下，然后将根目录`_config.yml`中的`theme`设置为自己的主题即可。我选择使用`yilia`这款主题，主要是出于简洁和性能的考量，但是原作者好像已经不再维护了，有些功能需要自己摸索。
+hexo的主题安装及其简单，选择一款喜欢的主题下载到`themes`目录下，然后将根目录`_config.yml`中的`theme`设置为自己的主题即可。我选择使用`butterfly`这款主题，主要是文档全面，而且`github`比较活跃，有问题能及时反馈。`Butterfly`: [Butterfly官方文档](https://butterfly.js.org/)
+
+### 
+
